@@ -11,8 +11,6 @@ Runs at ~ 0.02 to 0.04 ms if you have more optimization suggestions feel free to
 
 ## Preview
 
-https://user-images.githubusercontent.com/83806248/148609937-dc68849b-0d59-4e12-8558-679878d896d8.mp4
-
 ## Features
 * Limit of players in job
 * Counts paycheck for each shrub
