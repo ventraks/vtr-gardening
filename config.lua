@@ -4,6 +4,7 @@ Config.Cash = true -- receive money in cash or bank? false = bank, true = cash
 Config.CurrentPaycheck = true -- Notify about current paycheck after every prune?
 Config.MaxPlayers = 10 -- max players in job, 0 = unlimited (unrecommended)
 Config.Cooldown = 150 -- every shrub cooldown, in seconds
+Config.Paycheck = math.random(30,50) -- paycheck amount
 
 Shrubs = {
     ["Shrub01"] = {
