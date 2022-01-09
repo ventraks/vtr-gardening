@@ -26,8 +26,8 @@ RegisterNetEvent('vtr-gardening:client:drawMarkers', function()
     for k, v in pairs(Shrubs) do
         CreateThread(function()
             while inJob == true and Shrubs[k]["isBusy"] == false do
-                local playerCoords = GetEntityCoords(PlayerPedId())
-                local dist = #(playerCoords - v.coords)
+                local pos = GetEntityCoords(PlayerPedId())
+                local dist = #(pos - v.coords)
                 local sleep = 2000
 
                 if dist < 5.0 then
@@ -103,8 +103,8 @@ end)
 
 CreateThread(function()
     for k, v in pairs(Shrubs) do
-        exports['qb-target']:AddBoxZone(v.name, vector3(v.polyzone), v.lenght, v.width, {
-        name = v.name, 
+        exports['qb-target']:AddBoxZone(k, vector3(v.coords), v.lenght, v.width, {
+        name = k, 
         heading = v.heading, 
         debugPoly = false, 
         minZ = 36.7, 
