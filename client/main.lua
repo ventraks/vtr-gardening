@@ -66,8 +66,7 @@ RegisterNetEvent('vtr-gardening:client:pruningShrub', function(curShrub)
         StopAnimTask(PlayerPedId(), "amb@world_human_bum_wash@male@low@idle_a", "idle_a", 1.0)
         TriggerServerEvent('vtr-gardening:server:setState', curShrub)
         TriggerEvent('vtr-gardening:client:setState', curShrub)
-        local money = math.random(30,50)
-        PayCheck(money)
+        paycheck = paycheck + Config.Paycheck
         if Config.CurrentPaycheck then
             QBCore.Functions.Notify("Your current paycheck: $".. paycheck, "success")
         end
@@ -91,10 +90,6 @@ RegisterNetEvent('vtr-gardening:client:leaveJob', function()
         inJob = false
     end
 end)
-
-function PayCheck(money)
-    paycheck = paycheck + money
-end
  
 RegisterNetEvent('vtr-gardening:client:paycheck', function()
     TriggerServerEvent('vtr-gardening:server:paycheck', paycheck)
