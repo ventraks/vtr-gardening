@@ -11,7 +11,7 @@ Runs at ~ 0.02 to 0.04 ms if you have more optimization suggestions feel free to
 
 ## Preview
 
-[![Preview](https://i.imgur.com/Hcf9Pd2.png)](https://i.imgur.com/Hcf9Pd2.mp4)
+[![Preview](https://i.imgur.com/b1O38l1.png)](https://i.imgur.com/Hcf9Pd2.mp4)
 
 ## Features
 * Limit of players in job
