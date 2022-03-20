@@ -3,7 +3,7 @@ local jobPlayers = 0
 local isBusy = false
 
 RegisterNetEvent('vtr-gardening:server:work', function()
-    if Config.MaxPlayers => 0 then
+    if Config.MaxPlayers > 0 then
         if jobPlayers < Config.MaxPlayers then
             jobPlayers = jobPlayers + 1
             TriggerClientEvent('vtr-gardening:client:joinJob', source)
